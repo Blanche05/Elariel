@@ -21,8 +21,14 @@ export const botConfig = {
     // 3 = Watching
     // 4 = Custom
     // 5 = Competing
+    activities: [
+      {
+        name: "Custom Status", // required by Discord API, not shown in the client
+        state: "stalking",     // this is what people actually see
+        type: 4,               // Custom
+      },
+    ],
   },
-
   // =========================
   // COMMAND BEHAVIOR
   // =========================
